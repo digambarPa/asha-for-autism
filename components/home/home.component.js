@@ -123,11 +123,13 @@ define(["app", "angular"],
 
         angular.module(module.HOME)
             .component('homeComponent', homeComponent)
-            .config(function($stateProvider) {
+            .config(function($stateProvider, $urlRouterProvider) {
                 $stateProvider
                     .state("home", {
                         url: "/home",
                         component: 'homeComponent'
                     });
+
+                $urlRouterProvider.otherwise('/home');
             });
     });
