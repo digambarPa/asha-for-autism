@@ -1,5 +1,5 @@
-define(["app", "angular"],
-    function(module, angular) {
+define(["app", "angular", "jquery", "angular-bootstrap-ui"],
+    function(module, angular, $) {
 
         var homeComponent = {
             template: `<div>
@@ -27,43 +27,65 @@ define(["app", "angular"],
               </div>
 
               <div class="col-sm-3 col-xs-12">
-                <div class="thumbnail thumbnail_1">
+                <div class="thumbnail thumbnail_1" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_2">
+                <div class="thumbnail thumbnail_2" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_3">
+                <div class="thumbnail thumbnail_3" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_4">
+                <div class="thumbnail thumbnail_4" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_5">
+                <div class="thumbnail thumbnail_5" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_6">
+                <div class="thumbnail thumbnail_6" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
 
                 </div>
             </div>
             </div>
-
-
-
             </div>
             </div>`,
-            controller: [function() {
+            controller: ["$uibModal", "$log", "$document", function($uibModal, $log, $document) {
                 var self = this;
                 self.myInterval = 5000;
                 self.noWrapSlides = false;
                 self.active = 0;
                 var slides = self.slides = [];
                 var currIndex = 0;
+                self.items = ['item1', 'item2', 'item3'];
+                self.animationsEnabled = true;
+
+                self.open = function (bgUrl, size, parentSelector) {
+                    var parentElem = parentSelector ?
+                        angular.element($document[0].querySelector('.modal-demo ' + parentSelector)) : undefined;
+                    var modalInstance = $uibModal.open({
+                        animation: self.animationsEnabled,
+                        ariaLabelledBy: 'modal-title',
+                        ariaDescribedBy: 'modal-body',
+                        templateUrl: 'myModalContent.html',
+                        size: size,
+                        appendTo: parentElem,
+                        resolve: {
+                            items: function () {
+                                return self.items;
+                            }
+                        }
+                    });
+                    //$('.model-container').css('background-image', 'url("assets/carousel/1.jpg")');
+
+                };
+
+
+
 
                 self.addSlide = function() {
                     var newWidth = 600 + slides.length + 1;
@@ -82,10 +104,6 @@ define(["app", "angular"],
                 for (var i = 0; i < 6; i++) {
                     self.addSlide();
                 }
-
-
-                console.log(slides);
-
                 // Randomize logic below
 
                 function assignNewIndexesToSlides(indexes) {
@@ -100,6 +118,10 @@ define(["app", "angular"],
                         indexes[i] = i;
                     }
                     return shuffle(indexes);
+                }
+
+                function expandThumbnail(path){
+
                 }
 
                 // http://stackoverflow.com/questions/962802#962890
@@ -119,6 +141,7 @@ define(["app", "angular"],
                 }
 
             }]
+
         };
 
         angular.module(module.HOME)

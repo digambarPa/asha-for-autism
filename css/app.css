@@ -28,6 +28,13 @@ body{
 .footer-link{
     margin-top: 20px;
 }
+
+.model-container{
+    background-image: url("../assets/carousel/0.jpg");
+    background-size: 100% 100%;
+    background-color: transparent;
+    height: 600px;
+}
 /* Home */
 .logo{
     width: 80%;
