@@ -3,8 +3,9 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
 
     <script type="application/javascript" src="lib/require/require.js" data-main="config"></script>
 
@@ -12,19 +13,12 @@
 </head>
 
 <body>
-<div class="container-fluid">
-    <ul>
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="about">About</a></li>
-        <li><a ui-sref="autism">Austim</a></li>
-        <li><a ui-sref="services">Services</a></li>
-        <li><a ui-sref="events">Events</a></li>
-        <li><a ui-sref="help">Help</a></li>
-        <li><a ui-sref="contacts">Contacts</a></li>
-    </ul>
+<div class="container-fluid app-container">
+    <header-component></header-component>
     <div class="content-container">
-        <div ui-view="" style="min-height: 500px; background-color: #e6fff7; border: 1px solid red; padding: 5px"></div>
+        <div ui-view="" style="min-height: 500px;"></div>
     </div>
+    <footer-component></footer-component>
 </div>
 </body>
 

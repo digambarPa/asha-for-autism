@@ -1,0 +1,175 @@
+/* APP level*/
+body{
+    background-image: url("../assets/common/bgcurly.jpg");
+}
+.app-container{
+    width:80%;
+}
+
+.footer{
+    height: 70px;
+    margin-top: 10px;
+    background-color: #482e68;
+    margin-bottom: 20px;
+}
+
+.facebook-link{
+    background-image: url("../assets/common/facebook.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 60px;
+}
+
+.facebook-link a{
+    display: block;
+    height: 50px;
+}
+
+.footer-link{
+    margin-top: 20px;
+}
+/* Home */
+.logo{
+    width: 80%;
+    height: 100px;
+    background-image: url("../assets/common/asha_logo.png");
+    background-size: 100% 100%;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+.header{
+    margin-top: 10px;
+}
+.navbar-header,
+.navbar-collapse{
+    background-color: #482e68;
+}
+
+.navbar-header a,
+.navbar-collapse a{
+    color: #ffffff !important;
+    font-family: comic sans MS;
+}
+.navbar-collapse a{
+    font-size: 16px;
+}
+
+.thumbnail{
+    height: 150px;
+}
+
+.thumbnail_1{
+    background-image: url("../assets/carousel/0.jpg");
+    background-size: 100% 100%;
+}
+
+.thumbnail_2{
+    background-image: url("../assets/carousel/1.jpg");
+    background-size: 100% 100%;
+}
+
+.thumbnail_3{
+    background-image: url("../assets/carousel/2.jpg");
+    background-size: 100% 100%;
+}
+
+.thumbnail_4{
+    background-image: url("../assets/carousel/3.jpg");
+    background-size: 100% 100%;
+}
+
+.thumbnail_5{
+    background-image: url("../assets/carousel/4.jpg");
+    background-size: 100% 100%;
+}
+
+.thumbnail_6{
+    background-image: url("../assets/carousel/5.jpg");
+    background-size: 100% 100%;
+}
+/* About */
+.about{
+    background-image: url("../assets/about/about.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+.info{
+    margin-top: 15px;
+    background-color: #8C489F;
+    padding: 10px;
+}
+
+.info.mission {
+    margin-top: 0px;
+}
+
+.flower{
+    background-image: url("../assets/common/flower.jpg");
+    background-size: 100% 100%;
+    min-height: 600px;
+}
+
+/* Autism */
+
+.autism{
+    background-image: url("../assets/autism/art%20and%20craft%20activities.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+/* Services */
+.services{
+    background-image: url("../assets/services/Speech%20therapy.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+}
+
+.flower_1{
+    background-image: url("../assets/services/DSC02776.jpg");
+    background-size: 100% 100%;
+    min-height: 700px;
+    margin-bottom: 10px;
+}
+
+.flower_2{
+    background-image: url("../assets/services/DSC02787.jpg");
+    background-size: 100% 100%;
+    min-height: 700px;
+    margin-bottom: 10px;
+}
+
+.flower_3{
+    background-image: url("../assets/services/micky.jpg");
+    background-size: 100% 100%;
+    min-height: 600px;
+}
+.education-info{
+    margin-top: 0px;
+}
+
+
+/* Events */
+
+/* Help */
+
+/* Contact */
+
+@media (max-width:480px){
+    .app-container{
+        width:100%;
+    }
+    h2.heading{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:960px){
+    .app-container{
+        width:100%;
+    }
+}

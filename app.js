@@ -1,4 +1,4 @@
-define(["angular", "angular-ui-router"], function (angular) {
+define(["angular", "angular-ui-router", "angular-bootstrap-ui"], function (angular) {
     /* creating app modules */
     var module = {};
     module.COMMUNICATOR = "communicator";
@@ -13,14 +13,14 @@ define(["angular", "angular-ui-router"], function (angular) {
 
     // Creating all modules
     angular.module(module.COMMUNICATOR, []);
-    angular.module(module.HEADER, []);
+    angular.module(module.HEADER, ["ui.bootstrap"]);
     angular.module(module.ABOUT, []);
     angular.module(module.AUTISM, []);
     angular.module(module.CONTACTS, []);
     angular.module(module.EVENTS, []);
     angular.module(module.HELP, []);
     angular.module(module.SERVICES, []);
-    angular.module(module.HOME, ["ui.router", module.COMMUNICATOR, module.HEADER, module.ABOUT, module.AUTISM, module.CONTACTS, module.EVENTS, module.HELP, module.SERVICES]);
+    angular.module(module.HOME, ["ui.router", "ui.bootstrap", module.COMMUNICATOR, module.HEADER, module.ABOUT, module.AUTISM, module.CONTACTS, module.EVENTS, module.HELP, module.SERVICES]);
 
     return module;
 });

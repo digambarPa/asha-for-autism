@@ -7,6 +7,8 @@ require.config({
 
         // common component
         "communicator": "communicator/communicator",
+        "header": "components/common/header/header.component",
+        "footer": "components/common/footer/footer.component",
         "about": "components/about/about.component",
         "autism": "components/autism/autism.component",
         "contacts": "components/contacts/contacts.component",
@@ -27,7 +29,7 @@ require.config({
 
 /* entry point of our app */
 
-require(["run", "app", "angular", "home", "about", "autism", "contacts", "events", "help", "services"], function (run, application, angular) {
+require(["run", "app", "angular", "home", "header", "footer", "about", "autism", "contacts", "events", "help", "services"], function (run, application, angular) {
     angular.bootstrap(document.body, [application.HOME]);
 });
 
