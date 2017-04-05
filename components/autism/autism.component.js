@@ -4,9 +4,9 @@ define(["app", "angular"], function(module, angular) {
         template: `
                         <div class="row">
 
-                <div class="col-sm-5">
+                <div class="col-sm-6">
                     <div class="autism"></div>
-                    <div class="info trustee-info">
+                    <div class="info info-left trustee-info">
                         <h3>Some useful links about AUTISM</h3>
                         <ul>
                             <li>
@@ -67,7 +67,7 @@ define(["app", "angular"], function(module, angular) {
                     <div></div>
                 </div>
 
-                <div class="col-sm-5">
+                <div class="col-sm-6">
                     <div class="info mission">
                         <h2 style="text-align: center">Autism</h2>
                         <p>AUTISM is a life long developmental disability that typically appears in the first three years of life. It is primarily a neurological disorder that affects the functioning of the brain. It has been found throughout the world in families of all racial, ethnic and social backgrounds. Autism is four times more common in boys than in girls.</p>
@@ -91,13 +91,6 @@ define(["app", "angular"], function(module, angular) {
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-sm-2">
-                    <div class="flower">
-
-                    </div>
-                </div>
-
             </div>
         `,
 

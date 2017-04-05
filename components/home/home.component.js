@@ -5,10 +5,10 @@ define(["app", "angular", "jquery", "angular-bootstrap-ui"],
             template: `<div>
             <div class="row">
             <div class="col-sm-9 col-xs-12">
-              <div style="height: 405px">
+              <div class="accordian-container">
                 <div uib-carousel active="$ctrl.active" interval="$ctrl.myInterval" no-wrap="$ctrl.noWrapSlides">
                   <div uib-slide ng-repeat="slide in $ctrl.slides track by slide.id" index="slide.id">
-                    <img ng-src="{{slide.image}}" style="height:405px; width:100%; margin:auto;">
+                    <img class="accordian-container" ng-src="{{slide.image}}" style="width:100%; margin:auto;">
                     <div class="carousel-caption">
                       <h4>Slide {{slide.id}}</h4>
                      <!-- <p>{{slide.text}}</p>-->
@@ -26,28 +26,28 @@ define(["app", "angular", "jquery", "angular-bootstrap-ui"],
               </div>
               </div>
 
-              <div class="col-sm-3 col-xs-12">
-                <div class="thumbnail thumbnail_1" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
+              <div class="col-sm-3 col-xs-12  hidden-xs">
+                <div class="thumbnail thumbnail_1" ng-click="$ctrl.open('assets/carousel/0.jpg', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_2" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
+                <div class="thumbnail thumbnail_2" ng-click="$ctrl.open('assets/carousel/1.jpg', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_3" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
+                <div class="thumbnail thumbnail_3" ng-click="$ctrl.open('assets/carousel/2.jpg', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_4" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
+                <div class="thumbnail thumbnail_4" ng-click="$ctrl.open('assets/carousel/3.jpg', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_5" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
+                <div class="thumbnail thumbnail_5" ng-click="$ctrl.open('assets/carousel/4.jpg', 'lg')">
 
                 </div>
 
-                <div class="thumbnail thumbnail_6" ng-click="$ctrl.open('../assets/common/facebook.png', 'lg')">
+                <div class="thumbnail thumbnail_6" ng-click="$ctrl.open('assets/carousel/5.jpg', 'lg')">
 
                 </div>
             </div>
@@ -81,6 +81,13 @@ define(["app", "angular", "jquery", "angular-bootstrap-ui"],
                         }
                     });
                     //$('.model-container').css('background-image', 'url("assets/carousel/1.jpg")');
+                    console.log(bgUrl);
+                    //$('.model-container').css('backgroundImage','url('+bgUrl+')');
+                    setTimeout(function(){
+                        $('.model-container').css('background-image', 'url(' + bgUrl + ')');
+                        console.log( $('.model-container'));
+                    }, 10);
+
 
                 };
 

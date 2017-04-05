@@ -4,9 +4,9 @@ define(["app", "angular"],
         var servicesComponent = {
             template: `<div class="row">
 
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <div class="services"></div>
-                <div class="info services-info">
+                <div class="info info-left services-info">
                     <h3>Assessment, Training and Guidance Centre</h3>
                    <p>The Diagnostic and Family Services Centre of ASHA offers a range of services for children, families and teachers. The services include comprehensive medical, psychological, developmental, family and social, psycho-educational and academic assessments for children with learning problems, attention deficit and hyperactivity disorders, Autism Spectrum Disorders, delayed development and poor academic performance.?Assessments can objectively identify areas of skill, strength and need; they can rule-out or confirm suspicions and identify targets for treatment and intervention for autism, learning disability and other developmental delays.</p>
                    <h3>Assessments available at the Centre:</h3>
@@ -44,7 +44,7 @@ A child can overcome a wide range of developmental, behavioral and learning prob
                 <div></div>
             </div>
 
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <div class="info intervention">
                     <h2 style="text-align: center">Early Intervention</h2>
                     <p>Developmental disabilities in children are on the rise and there is much that needs to be understood, from cause to cure. However, there is one widely accepted fact: Early and intensive intervention can have a profound impact on the quality of life for both children at risk and their families.</p>
@@ -74,21 +74,10 @@ A child can overcome a wide range of developmental, behavioral and learning prob
                     </ul>
                 </div>
             </div>
-
-            <div class="col-sm-2">
-                <div class="flower_1">
-
-                </div>
-
-                <div class="flower_2">
-
-                </div>
-            </div>
-
         </div>
         <div class="row">
 
-            <div class="col-sm-10">
+            <div class="col-sm-12">
                 <div class="info education-info">
                     <h3 style="text-align: center">Primary Education</h3>
                     <p>The primary education centre works with children above the age of six who have been diagnosed with Autism Spectrum Disorder.</p>
@@ -121,14 +110,7 @@ A child can overcome a wide range of developmental, behavioral and learning prob
                     </ul>
                 </div>
             </div>
-
-            <div class="col-sm-2">
-                <div class="flower_3">
-
-                </div>
-            </div>
         </div>
-
         `,
 
             controller: [function () {

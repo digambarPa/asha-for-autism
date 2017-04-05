@@ -8,9 +8,9 @@ define(["app", "angular", "angular-ui-router"], function (module, angular) {
 
         template: `<div class="row">
 
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <div class="about"></div>
-                <div class="info trustee-info">
+                <div class="info info-left trustee-info">
                     <h3>The Board Of Trustees Consists of:</h3>
                     <ul>
                         <li>Mrs. Chandra Singh: <span>Chairman</span></li>
@@ -23,7 +23,7 @@ define(["app", "angular", "angular-ui-router"], function (module, angular) {
                 <div></div>
             </div>
 
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <div class="info mission">
                     <h2 style="text-align: center">Mission</h2>
                     <p>We endeavor to render exceptional love, care, hope and educational assistance to children with special needs to help them develop and utilize their potential.</p>
@@ -37,11 +37,11 @@ define(["app", "angular", "angular-ui-router"], function (module, angular) {
                 </div>
             </div>
 
-            <div class="col-sm-2">
+            <!--<div class="col-sm-2">
                 <div class="flower">
 
                 </div>
-            </div>
+            </div>-->
 
         </div>`,
 
