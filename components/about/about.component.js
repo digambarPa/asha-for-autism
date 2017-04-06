@@ -36,13 +36,6 @@ define(["app", "angular", "angular-ui-router"], function (module, angular) {
                     </li></ul>
                 </div>
             </div>
-
-            <!--<div class="col-sm-2">
-                <div class="flower">
-
-                </div>
-            </div>-->
-
         </div>`,
 
         controller: function () {
