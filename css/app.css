@@ -249,4 +249,9 @@ body{
     .footer-link{
         margin-top: 0px;
     }
+
+    .logo-mobile {
+        background-size: 40% 100%;
+        background-repeat: no-repeat;
+    }
 }
