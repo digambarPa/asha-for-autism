@@ -6,10 +6,10 @@ define(["app", "angular"], function (module, angular) {
         <div class="row header">
         	<div class="col-md-9 col-sm-12 col-xs-12">
         		<div class="row">
-        			<div class="col-md-12 col-xs-9">
+        			<div class="col-md-12 col-sm-10 col-xs-9">
         				<h2 class="heading" style="text-align: left; margin-top: 10px;"><strong>Academy for Severe Handicaps and Autism</strong></h2>
         			</div>
-        			<div class="col-xs-3 hidden-md hidden-lg" style="height: 80px;">
+        			<div class="col-xs-3 col-sm-2 hidden-md hidden-lg" style="height: 80px;">
         				<a ui-sref="home">
         					<div class="logo-mobile"></div>
         					<div style="margin-left: 10px;"><strong>ASHA</strong></div>
