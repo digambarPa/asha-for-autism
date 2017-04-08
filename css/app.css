@@ -43,20 +43,20 @@ body{
     text-align: center;
 }
 /* Home */
-.logo{
-    width: 80%;
-    height: 100px;
-    background-image: url("../assets/common/asha_logo.png");
+.logo-mobile{
+    height: 57px;
+    background-image: url(../assets/common/asha_logo.png);
     background-size: 100% 100%;
 }
 
-.logo a{
-    display: block;
-    width: 100%;
-    height: 60px;
+.logo{
+    height: 102px;
+    background-image: url(../assets/common/asha_logo.png);
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
 }
 .header{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 .navbar-header,
 .navbar-collapse{
